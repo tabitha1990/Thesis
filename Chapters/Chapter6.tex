@@ -87,7 +87,7 @@ The frequency at which a single fixed detector sees the beam coherently moving b
 \begin{equation}
 f_{CBO} = f_{C} - f_{x} = (1 - \sqrt{1-n})f_{C}
 \end{equation}
-So the oscillation of the radial mean is measured at a lower aliased frequency of $f_{CBO}$ while the vertical oscillation which has a frequency $f_{y}$ < 0.5$f_{c}$ is measured at its actual frequency. A diagram illustrating this is shown in figure 7.1. From this diagram it can also be seen that the oscillation at twice the vertical mean oscillation, which corresponds to the vertical width of the beam, is aliased. The measured frequency will be: 
+So the oscillation of the radial mean is measured at a lower aliased frequency of $f_{CBO}$ while the vertical oscillation which has a frequency $f_{y}$ < 0.5$f_{c}$ is measured at its actual frequency. A diagram illustrating this is shown in figure~\ref{fig:CBOdiagram}. From this diagram it can also be seen that the oscillation at twice the vertical mean oscillation, which corresponds to the vertical width of the beam, is aliased. The measured frequency will be: 
 
 \begin{equation}
 f_{VW} = f_{C} - 2f_{y} = (1 - \sqrt{n})f_{C}
@@ -102,9 +102,9 @@ Where the $f_{VW}$ refers to the frequency of the vertical waist, the term used 
 \caption{ An illustration of the coherent betatron oscillation (CBO). Showing in blue the radial betatron oscillation for several wavelengths. In black is the cyclotron circumference. As the radial betatron oscillation has a wavelength longer than the storage ring circumference the detector observes the muon beam to be moving closer to it and then move furher away. The frequency that the detector samples this beam motion is the CBO frequency.\cite{Reference29}}
 \label{fig:CBOdiagram}
 \end{figure}
-Figures 7.2 and 7.3 give illustrations of the field index and frequency range that is affected by the aliasing effect for a detector at a fixed azimuthal position. 
+Figures~\ref{fig:freq_vs_n.png} and~\ref{fig:freq_vs_n_alias.png} give illustrations of the field index and frequency range that is affected by the aliasing effect for a detector at a fixed azimuthal position. 
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/freq_vs_n.png}
 \decoRule
@@ -112,7 +112,7 @@ Figures 7.2 and 7.3 give illustrations of the field index and frequency range th
 \label{fig:freq_vs_n.png}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/freq_vs_n_alias.png}
 \decoRule
@@ -126,9 +126,9 @@ Care must be taken when choosing the operating quadrupole voltage. This is becau
 
 \subsection{Lost muons}
 
-Muons at the outer limits of the storage radius have a higher likelihood of being lost at early times. The muons which leave the storage region before decay are referred to as lost muons. These cause a deviation in the muon exponential decay curve, which affects the $\omega_{a}$ fits and leads to a shift in the $\omega_{a}$ calculated. Muons which lie on the outer edge of the muon beam distribution and are outside of the storage ring radius are removed by a process called scraping. This is where an asymmetric charge is placed on the electrostatic quadrupoles at early times causing the centroid of the beam to move radially and vertically by $\sim{2}$ mm, forcing the muons at the edge of the distribution into the path of collimators. This causes those muons to scatter, curl inwards and leave the storage ring \cite{muonloss1}. The quadrupoles are then restored to their nominal values and the remaining muons are stored. The vertical displacement of the muon beam distribution measured by the tracking stations over the course of the scraping period is shown in Figure 7.4. The binning chosen here was larger than the period of the expected oscillations so that only the effect of scraping can be seen. The $\omega_{a}$ fits do not start until 30 $\mu$s so that the effects of scraping are no longer present and the muon beam and corresponding betatron oscillations are constant throughout the fitting range.
+Muons at the outer limits of the storage radius have a higher likelihood of being lost at early times. The muons which leave the storage region before decay are referred to as lost muons. These cause a deviation in the muon exponential decay curve, which affects the $\omega_{a}$ fits and leads to a shift in the $\omega_{a}$ calculated. Muons which lie on the outer edge of the muon beam distribution and are outside of the storage ring radius are removed by a process called scraping. This is where an asymmetric charge is placed on the electrostatic quadrupoles at early times causing the centroid of the beam to move radially and vertically by $\sim{2}$ mm, forcing the muons at the edge of the distribution into the path of collimators. This causes those muons to scatter, curl inwards and leave the storage ring \cite{muonloss1}. The quadrupoles are then restored to their nominal values and the remaining muons are stored. The vertical displacement of the muon beam distribution measured by the tracking stations over the course of the scraping period is shown in figure~\ref{fig:AverageVerticalPosition_station12}. The binning chosen here was larger than the period of the expected oscillations so that only the effect of scraping can be seen. The $\omega_{a}$ fits do not start until 30 $\mu$s so that the effects of scraping are no longer present and the muon beam and corresponding betatron oscillations are constant throughout the fitting range.
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/AverageVerticalPosition_station12.png}
 \decoRule
@@ -149,9 +149,9 @@ The fast rotation analysis is carried out using calorimeter data. In the 2001 BN
 
 \subsection{Pitch correction}
 
-The measured $\omega_{a}$ value requires a correction due to the betatron oscillations having a small effect on $\omega_{s}$. In equation 3.15 it was assumed that the muon beams velocity is perpendicular to the magnetic field, thus the equation is simplified by the assumption that $B\cdot\beta$ = 0. However this is an approximation and for the high level of precision required for the $\omega_{a}$ measurement a correction is needed to account for the vertical betatron oscillations, where the muons velocity is not exactly perpendicular to the storage ring magnetic field.
+The measured $\omega_{a}$ value requires a correction due to the betatron oscillations having a small effect on $\omega_{s}$. In equation 3.15 it was assumed that the muon beams velocity is perpendicular to the magnetic field, thus the equation is simplified by the assumption that $B\cdot\beta$ = 0. However this is an approximation and for the high level of precision required for the $\omega_{a}$ measurement a correction is needed to account for the vertical betatron oscillations, where the muons velocity is not exactly perpendicular to the storage ring magnetic field. A simplistic illustration of vertical betatron oscillations is shown figure~\ref{fig:vertoscillationdiagram.png}.
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/vertoscillationdiagram.png}
 \decoRule
@@ -159,9 +159,9 @@ The measured $\omega_{a}$ value requires a correction due to the betatron oscill
 \label{fig:vertoscillationdiagram.png}
 \end{figure}
 
-The pitch correction is so called because during vertical betatron oscillations, the pitch angle $\psi$, defined to be the angle between the momentum and the horizontal axis, varies harmonically with $\psi = \psi_{0}\mathrm{cos}\omega_{y}t$, where $\omega_{y}$ is the vertical betatron frequency $\omega_{y} = 2\pi{f_{y}}$ with $\omega_{y} = 2\pi\sqrt{n}f_{c} \simeq2\pi\times2.5$ MHz. This is illustrated in figure 7.6.
+The pitch correction is so called because during vertical betatron oscillations, the pitch angle $\psi$, defined to be the angle between the momentum and the horizontal axis, varies harmonically with $\psi = \psi_{0}\mathrm{cos}\omega_{y}t$, where $\omega_{y}$ is the vertical betatron frequency $\omega_{y} = 2\pi{f_{y}}$ with $\omega_{y} = 2\pi\sqrt{n}f_{c} \simeq2\pi\times2.5$ MHz. This is illustrated in figure~\ref{fig:pitcheffect.png}.
 
-\begin{figure}[th]
+\begin{figure}[ht]
 \centering
 \includegraphics[scale=0.5]{Figures/pitcheffect.png}
 \decoRule
@@ -172,23 +172,23 @@ The pitch correction is so called because during vertical betatron oscillations,
 Using the assumption that the muons are all circulating on the magic radius, then $a_{\mu} - 1/(\gamma^{2}-1)=0 $ giving
 
 \begin{equation}
-\vec{\omega'_{a}}=-\frac{q}{m}[a_{\mu}\vec{B}-a_{\mu}\Big(\frac{\gamma}{\gamma+1}\Big)(\vec{\beta}\cdot\vec{B})\vec{\beta}]
+\vec{\omega_{a}}=-\frac{q}{m}[a_{\mu}\vec{B}-a_{\mu}\Big(\frac{\gamma}{\gamma+1}\Big)(\vec{\beta}\cdot\vec{B})\vec{\beta}]
 \end{equation}
 
 \noindent
 Using $\vec{\omega_{a}}=-(q/m)a_{\mu}\vec{B}$. 
 
-The coordinate system used in Figure 7.6 has y as the vertical axis, the z axis is the direction of propagation and $\vec{\beta}$ lying in the zy-plane. Using the assumptions
+The coordinate system used in figure~\ref{fig:pitcheffect.png} has y as the vertical axis, the z axis is the direction of propagation and $\vec{\beta}$ lying in the zy-plane. Using the assumptions
 
 \begin{equation}
-\vec{B}=\hat{y}B_{y}, \vec{\beta}=\hat{z}\beta_{z}+\hat{y}\beta_{y}=\hat{z}\bet {cos} \psi+\hat{y}\beta {sin} \psi, 
+\vec{B}=\hat{y}B_{y}, \vec{\beta}=\hat{z}\beta_{z}+\hat{y}\beta_{y}=\hat{z}\beta \cos{\psi} + \hat{y}\beta \sin{\psi}, 
 \end{equation}
 
 \noindent
 the equation below is derived.
 
 \begin{equation}
-\vec{\omega'_{a}} = - \frac{q}{m}[a_{\mu}\hat{y}B_{y}-a_{\mu}(\frac{\gamma}{\gamma + 1})\beta_{y}B_{y}(\hat{z}\beta_{z}+\hat{y}\beta_{y})].
+\vec{\omega_{a}} = - \frac{q}{m}[a_{\mu}\hat{y}B_{y}-a_{\mu}(\frac{\gamma}{\gamma + 1})\beta_{y}B_{y}(\hat{z}\beta_{z}+\hat{y}\beta_{y})].
 \end{equation}
 
 \noindent
@@ -230,9 +230,9 @@ C_{p} = - \frac{<\psi^2>}{2} = - \frac{<\psi^{2}_{0}>}{4} = - \frac{n}{4}\frac{<
 
 The vertical oscillations reduce the magnitude of $\omega_{a}$ and so the correction needs to be added to increase the value. In the 2001 BNL data set, the pitch correction was +0.27 $\pm$ 0.04 ppm \cite{Reference13}.
 
-Before looking at the oscillations the average vertical position and vertical width were studied to characterise the overall behavior of the vertical components of the beam throughout the fill. These are shown in figures 7.7 and 7.8. It can be seen that up to 30$\mu{s}$ the beam is narrowing due to scraping as expected. After 30$\mu{s}$ however both distributions should be flat and this is not observed in either distribution. This decrease in the vertical width should only have a tiny effect on the pitch correction calculated. To check this the calculation of two pitch corrections was done using the vertical width distribution in Figure 7.8 at station 12. One at an early time of 30 $\mu{s}$ with a vertical width of 13.05 mm and a late time of 300 $\mu{s}$ which gave a vertical width value of 12.70 mm. A $C_p$ = 182 ppb was calculated at 30 $\mu{s}$ and  $C_p$ = 172 ppb at 300 $\mu{s}$. Therefore the unexpected varying of the vertical width only leads to a 10 ppb effect on the pitch correction, which is within the specifications. However the effect of the change in the beam position and width throughout the fill on the $\omega_{a}$ fits needs to be taken into account.
+Before looking at the oscillations the average vertical position and vertical width were studied to characterise the overall behavior of the vertical components of the beam throughout the fill. These are shown in figures~\ref{fig:AverageVerticalPosition_rebinMeanPeriod_both.png} and~\ref{fig:AverageVerticalPosition_rebinWidthPeriod_both.png}. It can be seen that up to 30$\mu{s}$ the beam is narrowing due to scraping as expected. After 30$\mu{s}$ however both distributions should be flat and this is not observed in either distribution. This decrease in the vertical width should only have a tiny effect on the pitch correction calculated. To check this the calculation of two pitch corrections was done using the vertical width distribution in figure~\ref{fig:AverageVerticalPosition_rebinWidthPeriod_both.png} at station 12. One at an early time of 30 $\mu{s}$ with a vertical width of 13.05 mm and a late time of 300 $\mu{s}$ which gave a vertical width value of 12.70 mm. A $C_p$ = 182 ppb was calculated at 30 $\mu{s}$ and  $C_p$ = 172 ppb at 300 $\mu{s}$. Therefore the unexpected varying of the vertical width only leads to a 10 ppb effect on the pitch correction, which is within the specifications. However the effect of the change in the beam position and width throughout the fill on the $\omega_{a}$ fits needs to be taken into account.
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/AverageVerticalPosition_rebinMeanPeriod_both.png}
 \decoRule
@@ -240,7 +240,7 @@ Before looking at the oscillations the average vertical position and vertical wi
 \label{fig:AverageVerticalPosition_rebinMeanPeriod_both.png}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/AverageVerticalPosition_rebinWidthPeriod_both.png}
 \decoRule
@@ -250,9 +250,9 @@ Before looking at the oscillations the average vertical position and vertical wi
 
 \section{Vertical betatron oscillations}
 
-Before the observed change in mean and width during the fill the vertical beam frequencies were expected to be constant, but one explanation for them changing was that the quadrupole voltage was changing in an unexpected way during the fill. This would lead to the betatron frequencies also changing. To investigate this the extrapolated vertical position as a function of time from the trackers was used. The frequencies expected have a period of $\sim{450}$ ns, therefore the binning chosen was 10 ns. The average vertical position within each time bin is plotted versus the time in the fill. A fit is then applied, using a constant frequency as shown in Figures 7.9 and 7.10. An oscillation can clearly be seen in early times, at later times there is beam decoherence due to the momentum spread of the beam distribution. The $\chi^2$ from the fits is unacceptably large, and by looking at the fits at different times throughout the fill a change in frequency can be observed. Previously there had been evidence that there was a varying frequency in the radial beam oscillations and the fact that there was also evidence for this in the vertical beam oscillations indicated that the quadrupole field was indeed varying throughout the fill. This variation needed to be characterised more precisely so that it could be included in the $\omega_{a}$ fit function, and not distort the extracted value of $\omega_{a}$.
+Before the observed change in mean and width during the fill the vertical beam frequencies were expected to be constant, but one explanation for them changing was that the quadrupole voltage was changing in an unexpected way during the fill. This would lead to the betatron frequencies also changing. To investigate this the extrapolated vertical position as a function of time from the trackers was used. The frequencies expected have a period of $\sim{450}$ ns, therefore the binning chosen was 10 ns. The average vertical position within each time bin is plotted versus the time in the fill. A fit is then applied, using a constant frequency as shown in figures~\ref{fig:AverageVerticalPosition_exponentialFit_station12.png} and~\ref{fig:AverageVerticalPosition_exponentialFit_station18.png}. An oscillation can clearly be seen in early times, at later times there is beam decoherence due to the momentum spread of the beam distribution. The $\chi^2$ from the fits is unacceptably large, and by looking at the fits at different times throughout the fill a change in frequency can be observed. Previously there had been evidence that there was a varying frequency in the radial beam oscillations and the fact that there was also evidence for this in the vertical beam oscillations indicated that the quadrupole field was indeed varying throughout the fill. This variation needed to be characterised more precisely so that it could be included in the $\omega_{a}$ fit function, and not distort the extracted value of $\omega_{a}$.
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.25]{Figures/AverageVerticalPosition_exponentialFit_station12.png}
 \decoRule
@@ -260,7 +260,7 @@ Before the observed change in mean and width during the fill the vertical beam f
 \label{fig:AverageVerticalPosition_exponentialFit_station12.png}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.25]{Figures/AverageVerticalPosition_exponentialFit_station18.png}
 \decoRule
@@ -270,11 +270,11 @@ Before the observed change in mean and width during the fill the vertical beam f
 
 \section{Varying beam oscillation frequencies}
 
-As mentioned previously, the oscillation of the radial mean has a longer period and therefore is easier to measure with limited statistics. The variation in the radial frequency can be converted into an expected variation vertically using equation 7.24. However the equations are for ideal conditions (complete quadrupole coverage), so it is crucial to measure the vertical frequency variation independently. To investigate this variation in frequency further, time slices from the average vertical position were then taken and a Gaussian fit in the range $\pm$ 35 mm was performed to each time slice to obtain the vertical mean and vertical width. It can be seen from the plots in figure 7.11 that the width as well as the mean is varying throughout the fill. Figure 7.12 and figure 7.13 show the results of the fit in a 10 $\mu$s time slice from 20-25$\mu$s for the vertical width and vertical mean for station 12 and station 18 respectively. Looking at these distributions it can be seen that there are multiple frequencies in both. The individual frequencies that are in the distributions can be determined by doing an Fast Fourier Transform (FFT) on the vertical width and vertical mean. Figures 7.14 and 7.15 show the FFT for the fitted vertical mean (in blue) and the vertical width (in red) with the individual frequencies labelled for station 12 and station 18. However an FFT is not the most accurate method for obtaining the frequency values, particularly when looking for variations in frequency. Therefore fits were applied to the distributions to obtain more accurate frequency values, using the main frequencies from the FFT results as the initial guesses for the fit. Here 3 iterations of fits were carried out. The distributions were then split up into 10 $\mu$s sections 
+As mentioned previously, the oscillation of the radial mean has a longer period and therefore is easier to measure with limited statistics. The variation in the radial frequency can be converted into an expected variation vertically using equation 7.24. However the equations are for ideal conditions (complete quadrupole coverage), so it is crucial to measure the vertical frequency variation independently. To investigate this variation in frequency further, time slices from the average vertical position were then taken and a Gaussian fit in the range $\pm$ 35 mm was performed to each time slice to obtain the vertical mean and vertical width. It can be seen from the plots in figure~\ref{fig:verticalpositions.png} that the width as well as the mean is varying throughout the fill. Figure~\ref{fig:Width_mean_comparison_station12} and figure~\ref{fig:Width_mean_comparison_station18} show the results of the fit in a 10 $\mu$s time slice from 20-25$\mu$s for the vertical width and vertical mean for station 12 and station 18 respectively. Looking at these distributions it can be seen that there are multiple frequencies in both. The individual frequencies that are in the distributions can be determined by doing an Fast Fourier Transform (FFT) on the vertical width and vertical mean. Figures~\ref{fig:FFT_fittedWidth_fittedMean_station12.png} and~\ref{fig:FFT_fittedWidth_fittedMean_station18.png} show the FFT for the fitted vertical mean (in blue) and the vertical width (in red) with the individual frequencies labelled for station 12 and station 18. However an FFT is not the most accurate method for obtaining the frequency values, particularly when looking for variations in frequency. Therefore fits were applied to the distributions to obtain more accurate frequency values, using the main frequencies from the FFT results as the initial guesses for the fit. Here 3 iterations of fits were carried out. The distributions were then split up into 10 $\mu$s sections 
 % were they split up before or after you applied the fits to get the accurate frequency values? 
 as we have limited statistics and fitted separately to look for variation/trends throughout the fill. Figures 7.16 - 7.23 show the fits for the vertical mean and vertical width for both stations at an early and late time. 
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/verticalpositions.png}
 \decoRule
@@ -282,7 +282,7 @@ as we have limited statistics and fitted separately to look for variation/trends
 \label{fig:verticalpositions.png}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.2]{Figures/Width_mean_comparison_station12.png}
 \decoRule
@@ -290,7 +290,7 @@ as we have limited statistics and fitted separately to look for variation/trends
 \label{fig:Width_mean_comparison_station12}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.2]{Figures/Width_mean_comparison_station18.png}
 \decoRule
@@ -298,7 +298,7 @@ as we have limited statistics and fitted separately to look for variation/trends
 \label{fig:Width_mean_comparison_station18}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/FFT_fittedWidth_fittedMean_station12.png}
 \decoRule
@@ -306,7 +306,7 @@ as we have limited statistics and fitted separately to look for variation/trends
 \label{fig:FFT_fittedWidth_fittedMean_station12.png}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/FFT_fittedWidth_fittedMean_station18.png}
 \decoRule
@@ -382,27 +382,27 @@ as we have limited statistics and fitted separately to look for variation/trends
 
 Here the 9 day dataset is used for these plots as the statistics are higher compared to 60 hour dataset. However the limited statistics mean that only the $f_{y}$ and $f_{VW}$ can be fitted.
 
-Table 7.1 shows the difference in the frequencies observed in the FFTs calculated using the field index 0.108 and calculated using the fit with an exponentially decaying sinusoid for the time period 30-40$\mu$s.
+Table~\ref{table:frequencies} shows the difference in the frequencies observed in the FFTs calculated using the field index 0.108 and calculated using the fit with an exponentially decaying sinusoid for the time period 30-40$\mu$s.
 
-\begin{table}[h!]
+\begin{table}[ht]
 \begin{center}
  \begin{tabular}{||c | c | c | c | c | c||} 
  \hline
- Quantity & Expression & Frequency [MHz] & Period [\mu{s}] & Frequency [MHz] & Period [\mu{s}] \\ [0.5ex] 
+ Quantity & Expression & Frequency [MHz] & Period [$\mu$s] & Frequency [MHz] & Period [$\mu$s] \\ [0.5ex] 
  \hline\hline
- f_{a} & $\frac{e}{2\pi{mc}}a_{\mu}B$ & 0.229
- & 4.37 & 0.221 & 4.525\\ 
+ $f_{a}$ & $\frac{e}{2\pi{mc}}a_{\mu}B$ & 0.229 & 4.37 & 0.221 & 4.525\\ 
  \hline
- f_{c} & $\frac{\nu}{\pi{R_0}}$ & 6.700 & 0.149 & 6.700 & 0.149 \\
+ $f_{c}$ & $\frac{\nu}{\pi{R_0}}$ & 6.700 & 0.149 & 6.700 & 0.149 \\
  \hline
- f_{y} & $\sqrt{n}f_{c}$ & 2.202 & 0.454 & 2.211 & 0.452 \\
+ $f_{y}$ & $\sqrt{n}f_{c}$ & 2.202 & 0.454 & 2.211 & 0.452 \\
  \hline
- f_{CBO} & f_{c} - f_{x} & 0.372 & 2.688 & 0.376 & 2.667\\ 
+ $f_{\rm CBO}$ & $f_{c} - f_{x}$ & 0.372 & 2.688 & 0.376 & 2.667\\ 
  \hline
- f_{VW} & f_{c} - 2f_{y} & 2.296 & 0.436 & 2.297 & 0.435\\ 
+ $f_{VW}$ & $f_{c} - 2f_{y}$ & 2.296 & 0.436 & 2.297 & 0.435\\ 
  \hline
 \end{tabular}
 \caption{Frequencies in the g-2 storage ring for the 60hr data with a field index of n=0.108, showing the frequencies determined for the FFT along with the frequencies calculated using the fits.}
+\label{table:frequencies}
 \end{center}
 \end{table}
 
@@ -415,7 +415,7 @@ f_{y} = f_{CBO}\sqrt{\frac{2f_{c}}{f_{CBO}}-1}
 \end{equation}
 This is derived from equations for continuous quads rather than the segmented quads of the experiment. 
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.7]{Figures/VCBOvsFREQ.png}
 \decoRule
@@ -423,11 +423,11 @@ This is derived from equations for continuous quads rather than the segmented qu
 \label{fig:VCBOvsFREQ}
 \end{figure}
 
-Figure 7.24 displays the observed vertical CBO frequency distribution obtained from the 10 $\mu$s fits to the tracker data. The measurements are the black dots, the red is from the equation using the frequency from the radial. In order to obtain a good agreement between the two, an additional multiplicative factor needed to be applied to $f_{y}$. This factor corresponds to a 1.3$\%$ increase, and is attributed to the equations being based on 100$\%$ quad coverage, which is not the case in the experiment. With this factor established, it is now possible to convert between the measured variation in frequency radially and vertically. This is important because the radial CBO, and its variation throughout the fill, can be fitted more precisely than the vertical frequencies. The impact of adding the variation of the vertical oscillations to the $\omega_{a}$ fits, including this parameter is discussed in the next section.  
+Figure~\ref{fig:VCBOvsFREQ} displays the observed vertical CBO frequency distribution obtained from the 10 $\mu$s fits to the tracker data. The measurements are the black dots, the red is from the equation using the frequency from the radial. In order to obtain a good agreement between the two, an additional multiplicative factor needed to be applied to $f_{y}$. This factor corresponds to a 1.3$\%$ increase, and is attributed to the equations being based on 100$\%$ quad coverage, which is not the case in the experiment. With this factor established, it is now possible to convert between the measured variation in frequency radially and vertically. This is important because the radial CBO, and its variation throughout the fill, can be fitted more precisely than the vertical frequencies. The impact of adding the variation of the vertical oscillations to the $\omega_{a}$ fits, including this parameter is discussed in the next section.  
 
 \section{Fitting $\omega_{a}$}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/5par_fft.png}
 \decoRule
@@ -436,7 +436,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \end{figure}
 
 \iffalse
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/9par_fft.png}
 \decoRule
@@ -444,7 +444,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \label{fig:9par_fft}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/verCBO_fft.png}
 \decoRule
@@ -452,7 +452,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \label{fig:verCBO_fft}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/vCBOML_fft.png}
 \decoRule
@@ -460,7 +460,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \label{fig:vCBOML_fft}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/fullCBOML_fft.png}
 \decoRule
@@ -469,7 +469,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \end{figure}
 \fi
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/varCBOnew_fft.png}
 \decoRule
@@ -477,7 +477,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \label{fig:varCBOnew_fft}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/varCBO9day_fft.png}
 \decoRule
@@ -486,7 +486,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \end{figure}
 
 \iffalse
-\begin{figure}[!h]
+\begin{figure}[ht]
 \centering 
 \includegraphics[scale=0.5]{Figures/varCBOelba_fft.png}
 \decoRule
@@ -495,7 +495,7 @@ Figure 7.24 displays the observed vertical CBO frequency distribution obtained f
 \end{figure}
 \fi
 
-For the 60hr dataset, the $\omega_{a}$ fits can be performed and yield acceptable $\chi^2$ values with a constant vertical waist frequency, even though the variation in the radial frequency must be accounted for. This is because the period of the radial CBO is longer, as is the lifetime. This is not the case once the statistics increase, for example for the 9 day dataset, which has approximately 3 times the statistics. This can be seen by looking at the fourier transform of the residuals from the $\omega_{a}$ fits. Figure 7.26 shows the residuals when a constant $f_{VW}$ of 2.23MHz  is used. There is clearly still part of this frequency remaining which the fits do not account for. Figure 7.27 show the same fits, except this time the observed variation in $f_{VW}$ is taken into account, including a free parameter which is the equivalent of $\kappa$ in Figure 7.32. The value of this parameter, obtained from the calorimeter data is $\sim{1}\%$, which is consistent with the $\kappa$ value obtained from the tracker data. The omega a fits are further improved by including a varying frequency at $f_{y}$, which corresponds to the variation in the vertical mean. The same multiplicative factor is used when extracting this frequency as well.     
+For the 60hr dataset, the $\omega_{a}$ fits can be performed and yield acceptable $\chi^2$ values with a constant vertical waist frequency, even though the variation in the radial frequency must be accounted for. This is because the period of the radial CBO is longer, as is the lifetime. This is not the case once the statistics increase, for example for the 9 day dataset, which has approximately 3 times the statistics. This can be seen by looking at the fourier transform of the residuals from the $\omega_{a}$ fits. Figure 7.25 shows the residuals when a constant $f_{VW}$ of 2.23MHz  is used. There is clearly still part of this frequency remaining which the fits do not account for. Figure 7.26 show the same fits, except this time the observed variation in $f_{VW}$ is taken into account, including a free parameter which is the equivalent of $\kappa$ in figure~\ref{fig:VCBOvsFREQ}. The value of this parameter, obtained from the calorimeter data is $\sim{1}\%$, which is consistent with the $\kappa$ value obtained from the tracker data. The omega a fits are further improved by including a varying frequency at $f_{y}$, which corresponds to the variation in the vertical mean. The same multiplicative factor is used when extracting this frequency as well.     
 
 
 

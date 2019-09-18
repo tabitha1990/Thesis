@@ -1,24 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Masters/Doctoral Thesis 
-% Class File
-% Version 1.6 (27/8/17)
-%
-% This class was downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Authors:
-% Vel (vel@latextemplates.com)
-% Johannes Böttcher
-%
-% Notes:
-% 1) This class file defines the structure and layout of the template file (main.tex).
-% 2) It has been written in such a way that under most circumstances you should not need
-% to edit it; updating it to a newer version will be harder. If you do make changes, please change the name of
-% the file and add comments to make your changes more visible.
-%
-% Class license:
-% LPPL v1.3c (http://www.latex-project.org/lppl)
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -207,22 +188,24 @@
 %	DEFINE CUSTOM THESIS INFORMATION COMMANDS
 %----------------------------------------------------------------------------------------
 
-\NewDocumentCommand{\thesistitle} { o m }{%
- \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
- \def\@title{#2}%
- \def\ttitle{#2}%
-}
-\DeclareDocumentCommand{\author}{m}{\newcommand{\authorname}{#1}\renewcommand{\@author}{#1}}
-\NewDocumentCommand{\supervisor}{m}{\newcommand{\supname}{#1}}
-\NewDocumentCommand{\examiner}{m}{\newcommand{\examname}{#1}}
-\NewDocumentCommand{\degree}{m}{\newcommand{\degreename}{#1}}
-\NewDocumentCommand{\addresses}{m}{\newcommand{\addressname}{#1}}
-\NewDocumentCommand{\university}{m}{\newcommand{\univname}{#1}}
-\NewDocumentCommand{\department}{m}{\newcommand{\deptname}{#1}}
-\NewDocumentCommand{\group}{m}{\newcommand{\groupname}{#1}}
-\NewDocumentCommand{\faculty}{m}{\newcommand{\facname}{#1}}
-\NewDocumentCommand{\subject}{m}{\newcommand{\subjectname}{#1}}
-\NewDocumentCommand{\keywords}{m}{\newcommand{\keywordnames}{#1}}
+%%%%%%% DOGS DINNER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\NewDocumentCommand{\thesistitle} { o m }{%
+% \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
+% \def\@title{#2}%
+% \def\ttitle{#2}%
+%}
+%\DeclareDocumentCommand{\author}{m}{\newcommand{\authorname}{#1}\renewcommand{\@author}{#1}}
+%\NewDocumentCommand{\supervisor}{m}{\newcommand{\supname}{#1}}
+%\NewDocumentCommand{\examiner}{m}{\newcommand{\examname}{#1}}
+%\NewDocumentCommand{\degree}{m}{\newcommand{\degreename}{#1}}
+%\NewDocumentCommand{\addresses}{m}{\newcommand{\addressname}{#1}}
+%\NewDocumentCommand{\university}{m}{\newcommand{\univname}{#1}}
+%\NewDocumentCommand{\department}{m}{\newcommand{\deptname}{#1}}
+%\NewDocumentCommand{\group}{m}{\newcommand{\groupname}{#1}}
+%\NewDocumentCommand{\faculty}{m}{\newcommand{\facname}{#1}}
+%\NewDocumentCommand{\subject}{m}{\newcommand{\subjectname}{#1}}
+%\NewDocumentCommand{\keywords}{m}{\newcommand{\keywordnames}{#1}}
 
 \newcommand{\checktoopen}{% New command to move content to the next page which prints to the next odd page if twosided mode is active  
 	\if@openright\cleardoublepage\else\clearpage\fi

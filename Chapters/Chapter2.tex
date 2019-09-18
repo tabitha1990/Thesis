@@ -8,9 +8,9 @@ The E989 Fermilab muon g-2 experiment, aims to measure the anomalous magnetic mo
 
 The experiment applies the same measurement principle as the BNL E821 experiment and uses a storage ring method to determine a value of $a_{\mu}$. In the experiment, two frequencies are measured: $\omega_a$ and $\omega_p$. $\omega_a$ is the difference between the rate the muon polarization rotates and the rate the muon momentum rotates (the cyclotron frequency) and is determined from the arrival time spectrum of the decay positrons. Along with the magnetic field normalized to the Larmor frequency of a free proton $\omega_{p}$ determined by averaging the magnetic field maps over the muon beam distribution \cite{Reference23}. This section will describe the techniques used to make this $a_{\mu}$ measurement. 
 
-To achieve the target precision the systematic uncertainty limit on both the experimental measurements of the anomalous precession frequency $\omega_{a}$ and the magnetic field normalized to the proton Larmor frequency $\omega_{p}$ must be 70 ppb each. This would be a threefold and twofold improvement, respectively, compared to E821. Table 3.1 outlines how the precision will be improved from the E981 experiment. To achieve the goal 100 ppb statistical uncertainty, at least $1.5\times{10^{11}}$ events are needed, which is 20 times the statistics of the BNL E821 experiment.  
+To achieve the target precision the systematic uncertainty limit on both the experimental measurements of the anomalous precession frequency $\omega_{a}$ and the magnetic field normalized to the proton Larmor frequency $\omega_{p}$ must be 70 ppb each. This would be a threefold and twofold improvement, respectively, compared to E821. Table~\ref{table:bnl_systematics} outlines how the precision will be improved from the E981 experiment. To achieve the goal 100 ppb statistical uncertainty, at least $1.5\times{10^{11}}$ events are needed, which is 20 times the statistics of the BNL E821 experiment.  
 
-\begin{table}[h!]
+\begin{table}[htbp]
 \begin{center}
  \begin{tabular}{||c | c | m{5cm} | c||} 
  \hline
@@ -22,7 +22,7 @@ To achieve the target precision the systematic uncertainty limit on both the exp
  \hline
  Lost muons & 90 & Better collimation in ring & 20 \\
  \hline
- CBO & 70 & Higher n value (frequency). Better match of beamline to ring & < 30 \\
+ CBO & 70 & Higher $n$ value (frequency). Better match of beamline to ring & $<$ 30 \\
  \hline
  E and pitch & 50 & Improved tracker. Precise storage ring simulations & 30 \\ 
  \hline
@@ -30,7 +30,7 @@ To achieve the target precision the systematic uncertainty limit on both the exp
  \hline
 \end{tabular}
 \caption{Table of the largest systematic uncertainties for the BNL E821 experiment along with the proposed upgrade plans and the improved uncertainties these plans should achieve\cite{Reference29}.}
-\label{table:1}
+\label{table:bnl_systematics}
 \end{center}
 \end{table}
 
@@ -54,13 +54,13 @@ Therefore a charged particle traversing through a constant magnetic field has a 
 
 \section{Pion and muon decay}
 
-Muons are produced in the parity violating weak decays of pions. The dominant pion and muon decays are shown in figure 3.1. The dominant decay of the pion is given by
+Muons are produced in the parity violating weak decays of pions. The dominant pion and muon decays are shown in figure~\ref{fig:muonpiondecay}. The dominant decay of the pion is given by
 
 \begin{equation}
 {\pi^{+}}\rightarrow{\mu^{+}}\nu{_\mu}.
 \end{equation}
 \noindent
-The implication being that the weak force only couples to left-handed particles and right-handed anti-particles. Neutrinos are left handed and as such are emitted with their spin vector antiparallel to their momentum vector. Whereas anti-neutrinos are right handed so have their spin vector parallel to their momentum vector. A pion has a spin value of zero therefore to conserve angular momentum the muon must be emitted left handed with its spin and momentum directions antiparallel. A diagram of the parity violating pion decay is shown in figure 3.2.
+The implication being that the weak force only couples to left-handed particles and right-handed anti-particles. Neutrinos are left handed and as such are emitted with their spin vector antiparallel to their momentum vector. Whereas anti-neutrinos are right handed so have their spin vector parallel to their momentum vector. A pion has a spin value of zero therefore to conserve angular momentum the muon must be emitted left handed with its spin and momentum directions antiparallel. A diagram of the parity violating pion decay is shown in figure~\ref{fig:piondecay}.
 
 This can be exploited to produce a polarized muon beam. High energy polarised muons can be created by choosing forward or backward decays. Where forward or backward refers to whether the decay is forward or backward in the center-of-mass frame relative to the pion momentum. Forward decays have muons produced mostly parallel to the pion laboratory momentum. In these decays muons have the highest laboratory momentum with their polarisation opposite to the laboratory momentum. Whereas backward decays have muons produced mostly anti-parallel to the pion laboratory momentum. With these decays muons have the lowest laboratory momentum with their polarisation parallel the laboratory momentum. The g-2 experiment uses forward muon decays from a beam of polarised pions and so selects the highest energy muons produced \cite{Reference29}.
 
@@ -72,13 +72,13 @@ The dominant decay of the muon is also a parity violating weak interaction given
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.8]{Figures/muonpiondecay}
+\includegraphics[scale=0.75]{Figures/muonpiondecay}
 \decoRule
 \caption{Feynman diagrams of the dominant decays of the pion and muon.}
 \label{fig:muonpiondecay}
 \end{figure}
 
-In muon decay, the highest energy positrons have a maximum allowed energy in the muon reference frame (MRF) of $E_{max}=\frac{m_{\mu}c^2}{2}=53MeV$. In these decays the muon anti neutrino will be left handed and the electron neutrino right handed. A diagram of the parity violating muon decay is shown in figure 3.3. This means that both their momentum vectors will be parallel to each other but anti-parallel to the positron direction. As the neutrino pair contains zero total angular momentum, the decay positron will possess the muons angular momentum. In order to conserve angular momentum the positrons spin vector must be aligned with the muons spin vector. As an anti-particle the positron is right handed which implies that its spin and momentum vectors are parallel. And so in general muon decays will produce positrons that are preferentially emitted in the same direction as the muon spin. Similarly the highest energy positrons are emitted parallel to the muon spin in the MRF, with the spin of the positron directed parallel to the muons spin. Because the direction of the muon spin vector can be determined from its emission direction, the measurement of the precession of the average direction of the highest energy positrons is used to determine $\omega_{s}$.
+In muon decay, the highest energy positrons have a maximum allowed energy in the muon reference frame (MRF) of $E_{max}=\frac{m_{\mu}c^2}{2}=53MeV$. In these decays the muon anti neutrino will be left handed and the electron neutrino right handed. A diagram of the parity violating muon decay is shown in figure~\ref{fig:muondecay}. This means that both their momentum vectors will be parallel to each other but anti-parallel to the positron direction. As the neutrino pair contains zero total angular momentum, the decay positron will possess the muons angular momentum. In order to conserve angular momentum the positrons spin vector must be aligned with the muons spin vector. As an anti-particle the positron is right handed which implies that its spin and momentum vectors are parallel. And so in general muon decays will produce positrons that are preferentially emitted in the same direction as the muon spin. Similarly the highest energy positrons are emitted parallel to the muon spin in the MRF, with the spin of the positron directed parallel to the muons spin. Because the direction of the muon spin vector can be determined from its emission direction, the measurement of the precession of the average direction of the highest energy positrons is used to determine $\omega_{s}$.
 
 \begin{figure}[th]
 \centering
@@ -90,7 +90,7 @@ In muon decay, the highest energy positrons have a maximum allowed energy in the
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.6]{Figures/muondecay.png}
+\includegraphics[scale=0.55]{Figures/muondecay.png}
 \decoRule
 \caption{A diagram of the parity violating muon decay.}
 \label{fig:muondecay}
@@ -145,7 +145,7 @@ The fractional statistical error on $\omega_{a}$, when fitting data measured ove
 The value of the differential quantity $NA^2$ shows the relative 
 weight by electron energy to the ensemble average figure of merit, with equation 3.9 showing that the statistical uncertainty of a measurement of $\omega_{a}$ is inversely proportional to $NA^2$. This means that $NA^2$ needs to be maximized to minimize the statistical uncertainty on $\omega_{a}$\cite{Reference1}\cite{Reference29}.
 
-Figure 3.4 displays the relative number and asymmetry distribution versus energy in the laboratory frame. This shows that the statistical power is greatest for a maximum value of $NA^2$ which is at 2.6 GeV. When applying a fit to all positrons above a certain energy cut, the optimal threshold energy is found to be approximately 1.8 GeV. A value for $\omega_{a}$ can then be calculated using a five parameter fit using equation 3.8. The number of positron hits as a function of time with energy greater than 1.8 GeV measured by the calorimeters for the BNL E821 experiments 2001 data set is shown in figure 3.5. This shows the g-2 oscillation in the muon exponential decay curve and how $\omega_{a}$ can be determined from this data using a fit given by equation 3.8. 
+Figure~\ref{fig:NA2} displays the relative number and asymmetry distribution versus energy in the laboratory frame. This shows that the statistical power is greatest for a maximum value of $NA^2$ which is at 2.6 GeV. When applying a fit to all positrons above a certain energy cut, the optimal threshold energy is found to be approximately 1.8 GeV. A value for $\omega_{a}$ can then be calculated using a five parameter fit using equation 3.8. The number of positron hits as a function of time with energy greater than 1.8 GeV measured by the calorimeters for the BNL E821 experiments 2001 data set is shown in figure~\ref{fig:wiggle}. This shows the g-2 oscillation in the muon exponential decay curve and how $\omega_{a}$ can be determined from this data using a fit given by equation 3.8. 
 
 \begin{figure}[th]
 \centering
@@ -157,7 +157,7 @@ Figure 3.4 displays the relative number and asymmetry distribution versus energy
 
 \section{$\omega_{a}$ calculation}
 
-The muon anomaly frequency $omega_{a}$ is the frequency the spin vector precesses relative to the momentum vector. This is calculated using the difference between these two precession frequencies. A visualisation of the two frequencies is shown in figure 3.6. When the spin precession frequency is greater than the cyclotron frequency the g-factor value does not equal 2, this leads to a difference between these two frequencies. On the other hand if the muon had g = 2, then $a_{\mu}$ = 0 and so the spin and cyclotron frequencies would be equal.
+The muon anomaly frequency $omega_{a}$ is the frequency the spin vector precesses relative to the momentum vector. This is calculated using the difference between these two precession frequencies. A visualisation of the two frequencies is shown in figure~\ref{fig:spin_mom_diff}. When the spin precession frequency is greater than the cyclotron frequency the g-factor value does not equal 2, this leads to a difference between these two frequencies. On the other hand if the muon had g = 2, then $a_{\mu}$ = 0 and so the spin and cyclotron frequencies would be equal.
 The difference between these two frequencies $\omega_{a}$ = $\omega_{s}$ - $\omega_{c}$ is referred to as the anomalous precession frequency. 
 \begin{equation}
 \omega_{a} = \omega_{s} - \omega_{c} = \bigg(\frac{g}{2}-1\bigg)\frac{eB}{m} = a_{\mu}\frac{eB}{m}.
@@ -219,7 +219,7 @@ Removing these two effects leads to an $\omega_{a}$ given by
 
 \section{Determining $\omega_{p}$}
 
-The magnetic field measurement is carried out by extracting B-field in terms of the free proton Larmor precession frequency $\omega{_p}$. The goal is to measure $\delta\omega_{p} \leq {70}$ppb which is approximately a factor of 2.5 smaller than E821. The value of $\omega_{p}$ is obtained from measurements of the very precise magnetic field. There are several probes used to measure the magnetic field around the ring. These measure the Larmor frequency of a free proton $\omega_{p}$ while in the storage ring field. There is the trolley system which is able to pass through the muon storage volume and is fitted with Nuclear Magnetic Resonance (NMR) probes to carry out measurements of the magnetic field. When the beam is off, the trolley can travel around the storage ring. These measurements are done every 3-5 days and are combined together to obtain the magnetic field as a function of the position.
+The magnetic field measurement is carried out by extracting the B-field in terms of the free proton Larmor precession frequency $\omega{_p}$. The goal is to measure $\delta\omega_{p} \leq {70}$ppb which is approximately a factor of 2.5 smaller than E821. The value of $\omega_{p}$ is obtained from measurements of the very precise magnetic field. There are several probes used to measure the magnetic field around the ring. These measure the Larmor frequency of a free proton $\omega_{p}$ while in the storage ring field. There is the trolley system which is able to pass through the muon storage volume and is fitted with Nuclear Magnetic Resonance (NMR) probes to carry out measurements of the magnetic field. When the beam is off, the trolley can travel around the storage ring. These measurements are done every 3-5 days and are combined together to obtain the magnetic field as a function of the position.
 There are also 378 fixed NMR probes secured to the top and bottom of the storage ring vacuum chambers. Unlike the trolley they can run when the beam is on as they are placed outside the muon storage region and are used to relate the NMR trolley measurement to a measurements carried out while there is beam. A third system of probes act as a calibration probe system between the trolley measurements and the fixed probes. A magnetic field as a function of position and time is produced by combining the various field measurements \cite{Chap2Ref1}.
 
 The final value needed is $\big \langle \omega_{p} \big \rangle$ which is the average field experienced by the muons. To determine this value the muon distribution M(r,t) and the magnetic field as a function of position and time needs to be integrated over the muon distribution as given by

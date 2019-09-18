@@ -13,11 +13,11 @@ The so called muon loss uncertainty refers to the uncertainty associated with mu
 
 The tertiary goal is to look for an oscillation in the vertical decay angle of the emitted positron to see if there is a tilt in the muon precession plane away from the vertical direction. This would demonstrate either a longitudinal or radial component of the storage ring magnetic field or that the muon has a non-zero permanent Electric Dipole Moment (EDM). Both effects would alter the $\omega_{a}$ measurement. The tracking detectors are unique in the experiment as the only detector that can measure the up-down asymmetry in the positron angle caused by a tilt in the muon precession plane \cite{Reference29}. With the tracking detectors and the increased statistics the experiment aims to make a improved measurement on the limit of the muon EDM by two orders of magnitude on the previous limit measured by the BNL experiment.
 
-A table listing the goals for the systematic uncertainties measured using tracking detectors are listed below.
+Table~\ref{table:tracker_syst} lists the goals for the systematic uncertainties measured using the tracking detectors.
 
 \begin{table}[h!]
 \begin{center}
- \begin{tabular}{||c | c | c | m{5cm}||} 
+ \begin{tabular}{||c | c | c | m{3.5cm}||} 
  \hline
  Uncertainty & E821 value & E989 goal & Role of tracking \\ [0.5ex] 
  \hline\hline
@@ -34,13 +34,13 @@ A table listing the goals for the systematic uncertainties measured using tracki
  \hline
 \end{tabular}
 \caption{Systematic uncertainty goals for the Muon g-2 experiment and the role of tracking required to meet these goals \cite{Reference29}.}
-\label{table:1}
+\label{table:tracker_syst}
 \end{center}
 \end{table}
 
 \section{Design}
 
-The straw tracking stations consist of 8 identical tracking modules which are placed in close proximity to each other. There are two tracking stations situated at $180^{\circ}$ (station 1) and $270^{\circ}$ (station 2) around the storage ring. These are installed inside the vacuum chambers in order to minimise multiple scattering of particles travelling through the trackers and placed directly in front of a calorimeter. The close proximity of the tracking modules to the beam enables the reconstruction of lower momentum positrons and multiple tracking modules, separated in total by $\sim$1m, ensures that the curvature of the tracks for the momentum measurement can be accurately determined. The tracking modules are constructed from two aluminium manifolds (top and bottom manifolds) fixed in place by an aluminium flange. These are both shown in figures 5.1 and 5.2 respectively. The manifolds contain 128 identically drilled holes to hold in place 128 aluminised Mylar straws. The manifolds also contain the front-end electronics and enable the supply of gas to the straws. The straws are potted into the manifolds in four rows of 32 straws. Two adjoining rows of straws are called the V layers which are angled at $7.5^{\circ}$ from the vertical plane. The other two adjoining rows are called the U layers are angled at $-7.5^{\circ}$ from the vertical plane. An aluminium tube called a Snout connects to each manifold. The Snouts are used to connect the flange to the secondary electronics which are housed in the Flobber. The Snouts contain the flexi cables which connect to the feedthrough boards. Once the manifolds have been populated with the frontend electronics, they are sealed with a lid and vacuum greased O-ring. A picture of a completed tracking module is shown in figure 5.3. The angle of the straw layers enables the vertical height of the incoming positron tracks to be calculated. The trackers are required to measure the vertical and radial beam distributions to a high accuracy. To achieve this a resolution of approximately 100 $\mu$m per position measurement in the radial axis is required. The requirements on the vertical axis are far less stringent as there is no curvature of the tracks in the vertical direction. 
+The straw tracking stations consist of 8 identical tracking modules which are placed in close proximity to each other. There are two tracking stations situated at $180^{\circ}$ (station 1) and $270^{\circ}$ (station 2) around the storage ring. These are installed inside the vacuum chambers in order to minimise multiple scattering of particles travelling through the trackers and placed directly in front of a calorimeter. The close proximity of the tracking modules to the beam enables the reconstruction of lower momentum positrons and multiple tracking modules, separated in total by $\sim$1m, ensures that the curvature of the tracks for the momentum measurement can be accurately determined. The tracking modules are constructed from two aluminium manifolds (top and bottom manifolds) fixed in place by an aluminium flange. These are both shown in figures~\ref{fig:manifold} and ~\ref{fig:flange} respectively. The manifolds contain 128 identically drilled holes to hold in place 128 aluminised Mylar straws. The manifolds also contain the front-end electronics and enable the supply of gas to the straws. The straws are potted into the manifolds in four rows of 32 straws. Two adjoining rows of straws are called the V layers which are angled at $7.5^{\circ}$ from the vertical plane. The other two adjoining rows are called the U layers are angled at $-7.5^{\circ}$ from the vertical plane. An aluminium tube called a Snout connects to each manifold. The Snouts are used to connect the flange to the secondary electronics which are housed in the Flobber. The Snouts contain the flexi cables which connect to the feedthrough boards. Once the manifolds have been populated with the frontend electronics, they are sealed with a lid and vacuum greased O-ring. A picture of a completed tracking module is shown in figure~\ref{fig:labeledstrawtracker}. The angle of the straw layers enables the vertical height of the incoming positron tracks to be calculated. The trackers are required to measure the vertical and radial beam distributions to a high accuracy. To achieve this a resolution of approximately 100 $\mu$m per position measurement in the radial axis is required. The requirements on the vertical axis are far less stringent as there is no curvature of the tracks in the vertical direction. 
 
 \begin{figure}[th]
 \centering
@@ -64,7 +64,7 @@ The design specifications require a straw resolution of at least 300 $\mu$m to e
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.5]{Figures/labeledstrawtracker.pdf}
+\includegraphics[scale=0.40]{Figures/labeledstrawtracker.pdf}
 \decoRule
 \caption{A photograph of a straw tracking detector labelling its key components.}
 \label{fig:labeledstrawtracker}
@@ -92,11 +92,11 @@ The time that the electronics is triggered is designated as the time of the hit.
 t_{h} = t_{0} + t_{d}.
 \end{equation}
 \noindent
-Therefore if $t_{0}$ is known then $t_{d}$ can be calculated. This relies on detailed knowledge of the behaviour of the charged particles in the straw gas. From $t_{d}$ the distance that the charged particle travelled through the straw (and its distance away from the wire) can be inferred. This is known as the Distance of Closest Approach (DCA), which tells us the distance the particles primary ionisation happened but not the direction in which it travelled. Instead it gives a radius of possible points where the primary ionisation has occurred called the drift circle. A diagram of a positron passing through a straw and causing primary ionisations is shown in figure 5.4. No knowledge of the vertical direction is known and so this leads to a cylinder around the wire of possible points where the primary ionisation will have occurred. To resolve this issue and determine the positrons trajectory through the tracking detectors, the cylinders from multiple straws are combined to determine the positrons path. This is the reason to have the straws orientated in two different directions, as it enables the determination of the vertical direction of the positrons trajectory. 
+Therefore if $t_{0}$ is known then $t_{d}$ can be calculated. This relies on detailed knowledge of the behaviour of the charged particles in the straw gas. From $t_{d}$ the distance that the charged particle travelled through the straw (and its distance away from the wire) can be inferred. This is known as the Distance of Closest Approach (DCA), which tells us the distance the particles primary ionisation happened but not the direction in which it travelled. Instead it gives a radius of possible points where the primary ionisation has occurred called the drift circle. A diagram of a positron passing through a straw and causing primary ionisations is shown in figure~\ref{fig:driftstraw}. No knowledge of the vertical direction is known and so this leads to a cylinder around the wire of possible points where the primary ionisation will have occurred. To resolve this issue and determine the positrons trajectory through the tracking detectors, the cylinders from multiple straws are combined to determine the positrons path. This is the reason to have the straws orientated in two different directions, as it enables the determination of the vertical direction of the positrons trajectory. 
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.5]{Figures/driftstraw.pdf}
+\includegraphics[scale=0.4]{Figures/driftstraw.pdf}
 \decoRule
 \caption{A diagram showing primary ionisations caused by the interaction of the positron with the straw gas.  This indicates how the drift time $t_{d}$ is calculated from the hit time $t_{h}$ and the $t_{0}$ value.}
 \label{fig:driftstraw}
@@ -133,7 +133,7 @@ The track fitting is carried out using the GEANE (Geometry and Error Propagation
 \noindent
 where $\vec{p}$ are the predicted track parameters given from the fit, $\vec{x}$ are the measured track parameters and $\sigma$ is the covariance matrix x of errors on the fitted parameters.
 
-The Geant4 error propagation calculates the error matrices and predicted track parameters by starting off with guesses and then propagating the track parameters from these guesses. This is done by propagating the positrons by their average trajectories and splitting the steps into small enough sections. Meaning that a helical trajectory can be used in a magnetic field with a very small variation. Minimising the $\chi^{2}$ with respect to the track parameters leads to an improvement in the track fit \cite{geanefitting}. An example of a formed track candidate is shown in figure 5.5.
+The Geant4 error propagation calculates the error matrices and predicted track parameters by starting off with guesses and then propagating the track parameters from these guesses. This is done by propagating the positrons by their average trajectories and splitting the steps into small enough sections. Meaning that a helical trajectory can be used in a magnetic field with a very small variation. Minimising the $\chi^{2}$ with respect to the track parameters leads to an improvement in the track fit \cite{geanefitting}. An example of a formed track candidate is shown in figure~\ref{fig:Track}.
 
 \begin{figure}[th]
 \centering
@@ -154,7 +154,7 @@ This uses track parameters determined for the entry point and exit point of the 
 
 \section{Tracking quality cuts}
 
-Quality cuts are applied to the data in order to reduce the tails observed in the tracking distributions and reduce the tracking uncertainties. Since the tracking detectors are not the primary detectors for this experiment, the track quality cuts were chosen to be fairly strict. They are optimised such that a small subset of tracks, representative of the whole sample, are as accurate as possible. This will need to be improved for track only analyses of the g-2 data (for example the EDM measurement), but is sufficient for the primary goal of measuring the beam dynamics. Effective quality cuts include having at least 12 straw hits required per track as a low number of hits leads to an increased error in determining the vertex position, removing tracks which have from start to finish more than 30$\%$ of layers without a hit, requiring that the track residual (measured - predicted) position is smaller than 0.5mm for any hit. Below in Table 5.2 is a summary of the quality cuts used in the tracking analysis.
+Quality cuts are applied to the data in order to reduce the tails observed in the tracking distributions and reduce the tracking uncertainties. Since the tracking detectors are not the primary detectors for this experiment, the track quality cuts were chosen to be fairly strict. They are optimised such that a small subset of tracks, representative of the whole sample, are as accurate as possible. This will need to be improved for track only analyses of the g-2 data (for example the EDM measurement), but is sufficient for the primary goal of measuring the beam dynamics. Effective quality cuts include having at least 12 straw hits required per track as a low number of hits leads to an increased error in determining the vertex position, removing tracks which have from start to finish more than 30$\%$ of layers without a hit, requiring that the track residual (measured - predicted) position is smaller than 0.5mm for any hit. Below in Table~\ref{table:qualitycuts} is a summary of the quality cuts used in the tracking analysis.
 
 \begin{table}[h!]
 \begin{center}
@@ -184,13 +184,13 @@ Drift times & 0 < and < 70 ns \\
  \hline
 \end{tabular}
 \caption{The quality cuts applied to the tracking detector data.}
-\label{table:2}
+\label{table:qualitycuts}
 \end{center}
 \end{table}
 
 \section{Readout electronics}
 
-Once a signal has been produced on a sense wire two sets of electronics are used to convert the analog signal into a digital signal. These are the frontend electronics and the backend electronics. The frontend electronics are the boards which detect the wire signals and processes these into straw hits. A photograph of the frontend electronics is shown in figure 5.6. The backend electronics are the electronic boards used to interface the data from all the frontend boards and also synchronise the signals using the experimental clock information.
+Once a signal has been produced on a sense wire two sets of electronics are used to convert the analog signal into a digital signal. These are the frontend electronics and the backend electronics. The frontend electronics are the boards which detect the wire signals and processes these into straw hits. A photograph of the frontend electronics is shown in figure~\ref{fig:manifoldelectronics}. The backend electronics are the electronic boards used to interface the data from all the frontend boards and also synchronise the signals using the experimental clock information.
 
 \subsection{Frontend electronics}
 
@@ -204,13 +204,13 @@ Once a signal has been produced on a sense wire two sets of electronics are used
 
 The frontend electronics consist of ASDQs (Amplifier Shaper Discriminator with charge (Q)) boards which are located inside the tracker manifolds and used to convert the analog signals from the sense wire to digital hits. This data is then sent to the TDC (Time to Digital Converter) boards which are contained in the box attached to the Snouts called the Frontend Low voltage Optical Box to BackEnd Readout (FLOBBER). The ASDQ boards are situated directly at the end of the sense wire and as such are the first electronics to process the wire signal. The ASDQ boards are connected directly into the manifolds via long pins to provide electrical connection, with every ASDQ boards connecting to 16 sense wires and so requires four ASDQ boards per manifold.
 
-The ASDQ boards take several steps in converting the analog signal into a digital signal. These are amplification, signal shaping, baseline restoration and discrimination. The signal is shaped to smooth out the multiple small peaks that are created by the multiple primary ionisations produced by the charged particle travelling through the straw. This creates a single smooth peak for a single charged particle. Baseline restoration is used to remove the long signal tail that arises from the much slower ion signal. Doing this also ensures that primary ionisations from the next charged particle to pass through the straw are not consealed by the ion tail. Meaning the two signals can be easily distinguished, increasing the rate of signals that can be determined. The discriminator is used to register when the signal passes a threshold and recording the digital straw hit as being from the leading edge where the signal first crosses over the threshold to the trailing edge where the signal goes below the threshold. A diagram showing the step the ASDQ takes to convert the analog to digital signal is shown in figure 5.7.
+The ASDQ boards take several steps in converting the analog signal into a digital signal. These are amplification, signal shaping, baseline restoration and discrimination. The signal is shaped to smooth out the multiple small peaks that are created by the multiple primary ionisations produced by the charged particle travelling through the straw. This creates a single smooth peak for a single charged particle. Baseline restoration is used to remove the long signal tail that arises from the much slower ion signal. Doing this also ensures that primary ionisations from the next charged particle to pass through the straw are not consealed by the ion tail. Meaning the two signals can be easily distinguished, increasing the rate of signals that can be determined. The discriminator is used to register when the signal passes a threshold and recording the digital straw hit as being from the leading edge where the signal first crosses over the threshold to the trailing edge where the signal goes below the threshold. A diagram showing the step the ASDQ takes to convert the analog to digital signal is shown in figure~\ref{fig:asdqsignalpath}.
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.5]{Figures/asdqsignalpath.png}
+\includegraphics[scale=0.48]{Figures/asdqsignalpath.png}
 \decoRule
-\caption{A diagram displaying the steps the ASDQ carries out to convert an analog signal to a digital signal. (a) Multiple short signals are measured for each of the avalanches caused the the primary interactions of the positron with the straw gas. (b) The amplification and shaping of the short signals into one smooth signal. (c) The discriminator selects the data that passes above the threshold shown by the red line. The blue lines indicate the section of the signal that passes above this threshold. (d) The digital signal created for the leading and trailing edges of the smoothed out signal. The ion tail is not included in the diagram \cite{analogtodigital}}.
+\caption{A diagram displaying the steps the ASDQ carries out to convert an analog signal to a digital signal. (a) Multiple short signals are measured for each of the avalanches caused the the primary interactions of the positron with the straw gas. (b) The amplification and shaping of the short signals into one smooth signal. (c) The discriminator selects the data that passes above the threshold shown by the red line. The blue lines indicate the section of the signal that passes above this threshold. (d) The digital signal created for the leading and trailing edges of the smoothed out signal. The ion tail is not included in the diagram \cite{analogtodigital}.}
 \label{fig:asdqsignalpath}
 \end{figure}
 
@@ -226,7 +226,7 @@ The digital signals from the ASDQ boards are then sent to a TDC motherboard via 
 
 \begin{figure}[th]
 \centering
-\includegraphics[scale=0.8]{Figures/daqdatachain}
+\includegraphics[scale=0.7]{Figures/daqdatachain}
 \decoRule
 \caption{The hierarchy of frontend and backend boards and the numbers of each electronic boards used in the straw tracker readout system.}
 \label{fig:daqdatachain}
@@ -236,13 +236,13 @@ The digital signals from the ASDQ boards are then sent to a TDC motherboard via 
 
 The backend electronics include logic boards (LB), the FC7 and the AMC13. The two LBs per module are also located in the FLOBBER and provide an interface to the ASDQ-TDC pairs (1 LB per 4 pairs) used to supply clock and control signals to the TDC's and gather the information together into a single data block to be processed downstream in the FC7 and AMC13 boards. The LB consists of three external interfaces. A fibre-optic cable which connects to the higher level backend electronics to receive the external clock and control signals, the LV line supplying low voltage to the frontend electronic boards and a serial communication port to the slow control hardware. The fiber optic cables are required to send data over large distances very quickly and so the higher level backend electronics can be stored away from the trackers. These are placed in the centre of the ring away from the magnetic field storage region, allowing magnetic materials to be used.
 
-Three FC7 $\mu$TCA advanced mezzanine cards (AMC) are located in the $\mu$TCA crate located at the centre of the storage ring, each connected to 16 LBs (one tracker stations worth). The FC7 is used to supply the clock and control signals for the LBs and collect a hit data block from all the LBs into a singular block using an event builder. The AMC13 board is the most downstream board which is also housed in the $\mu$TCA crate and collects together the hit data from the 3 FC7 boards as well as distributing the clock and control signals to the tracker modules. The AMC13 connects to a computer in the counting room via a Gigabit Ethernet (GbE) fiber in which the hit data blocks from the frontend boards can be saved to disk. Diagrams of the heirachy of the frontend and backend electronics are shown in figures 5.8 and 5.9.
+Three FC7 $\mu$TCA advanced mezzanine cards (AMC) are located in the $\mu$TCA crate located at the centre of the storage ring, each connected to 16 LBs (one tracker stations worth). The FC7 is used to supply the clock and control signals for the LBs and collect a hit data block from all the LBs into a singular block using an event builder. The AMC13 board is the most downstream board which is also housed in the $\mu$TCA crate and collects together the hit data from the 3 FC7 boards as well as distributing the clock and control signals to the tracker modules. The AMC13 connects to a computer in the counting room via a Gigabit Ethernet (GbE) fiber in which the hit data blocks from the frontend boards can be saved to disk. Diagrams of the heirachy of the frontend and backend electronics are shown in figures~\ref{fig:daqdata} and ~\ref{fig:daqdatachain}.
 
 \section{Choice of wire voltage}
 
 Gain measurements were carried out to find the optimal operational wire voltage for the modules. The gain is the ratio of the final number of electrons detected by the straw wire to the number of electrons initially liberated in a gas. A high voltage on the straw wire will lead to a larger electric field strength and therefore electrons in the straw will have higher energies after collisions, leading to an increased likelihood of more ionisations. Therefore a larger signal is detected by the straw wire. However if the wire voltage is set too high the gas in the straw starts to breakdown with too many hits being detected by the wire. This amplifies the measurement of one charged particle leading to saturation of the electronics. If the voltage is too low, it will give a low electric field strength in the straw. Thus too few electrons will be liberated during collisions to produce a large enough signal in the wire. As the signal must be above the discriminator threshold of 200 mV, this would lead to loss of data recorded.
 
-An optimal wire voltage must be found in between these two effects. This is the plateau region, where the best balance of high gas gain along with the minimum breakdown of gas is located. To determine the optimal wire voltage, the number of straw hits for various wire voltages was measured. This was carried out using a radioactive $Sr^{90}$ $\beta^-$ decay source with two types of gases; 80:20 $Ar:C0_{2}$ and 50:50 $Ar:C_{2}H_{6}$. As can be seen by figure 5.10 for the tracker straw gas using 50:50 $Ar:C_{2}H_{6}$ below 1200 V the gain is too low for straw events. With increasing voltage the gain increases and so does the number of hits recorded by the electronics. At a voltage of approximately 1550 V the number of hits recorded plateaus. This indicates that at this voltage approximately all of the beta particles travelling through the straw are detected by the wire as hits. This continues until the voltage reaches about 1700V. From there onwards the hit rate increases due to an increasing gain indicating the breakdown of the gas. This means that each beta particle will cause multiple hits to be recorded. Therefore the optimal voltage for the wire should lie on this plateau range, with a voltage of 1650V being chosen.
+An optimal wire voltage must be found in between these two effects. This is the plateau region, where the best balance of high gas gain along with the minimum breakdown of gas is located. To determine the optimal wire voltage, the number of straw hits for various wire voltages was measured. This was carried out using a radioactive $Sr^{90}$ $\beta^-$ decay source with two types of gases; 80:20 $Ar:C0_{2}$ and 50:50 $Ar:C_{2}H_{6}$. As can be seen by figure~\ref{fig:plateau} for the tracker straw gas using 50:50 $Ar:C_{2}H_{6}$ below 1200 V the gain is too low for straw events. With increasing voltage the gain increases and so does the number of hits recorded by the electronics. At a voltage of approximately 1550 V the number of hits recorded plateaus. This indicates that at this voltage approximately all of the beta particles travelling through the straw are detected by the wire as hits. This continues until the voltage reaches about 1700V. From there onwards the hit rate increases due to an increasing gain indicating the breakdown of the gas. This means that each beta particle will cause multiple hits to be recorded. Therefore the optimal voltage for the wire should lie on this plateau range, with a voltage of 1650V being chosen.
 
 \begin{figure}[th]
 \centering
@@ -256,7 +256,7 @@ An optimal wire voltage must be found in between these two effects. This is the 
 
 Data Quality Monitoring (DQM) is used to enable the monitoring of the tracking detectors performance in real time during data taking. This is used to monitor the trackers performance and looking for problems with the data that shifters can quickly identify and rectify. Examples of things that can be monitored in real time include the position and motion of the extrapolated beam, the number of hits per straw which is used to look for noisy or dead straw and any change in the drift time which could indicate a leak in the straw. The tracking detectors have performed extremely well during data taking periods and so far there has been no detector down time due to HV trips. 
 
-The control of data aquisition (DAQ) for the experiment is controlled by the Maximally Integrated Data Acquisition System (MIDAS) software package. This is used to handle data from the frontend electronics, building events coming from various hardware/software locations and writing the data. This converts MIDAS data to ART data (the event processing framework used for the experiment) and allows for real time viewing of data taking via a web page. figures 5.11 - 5.13 show several tracking detector DQM web pages.
+The control of data aquisition (DAQ) for the experiment is controlled by the Maximally Integrated Data Acquisition System (MIDAS) software package. This is used to handle data from the frontend electronics, building events coming from various hardware/software locations and writing the data. This converts MIDAS data to ART data (the event processing framework used for the experiment) and allows for real time viewing of data taking via a web page. Figures~\ref{fig:DQMoverview}, ~\ref{fig:DQMtracks} and~\ref{fig:DQMhits} show several tracking detector DQM web pages.
 
 \begin{figure}[th]
 \centering
@@ -286,34 +286,34 @@ The control of data aquisition (DAQ) for the experiment is controlled by the Max
 
 The data taking for the run 1 physics was during 23rd March - 7th July 2018. These tracking plots in figures 5.14 - 5.21 were created using a dataset during this run called the 60 hour data set which was taken during 19th - 23rd April 2018. 
 
-Figure 5.14 shows the all straws hits in both stations and is the first plot looked at to determine if there are any problems with the straws. This includes checking that there are no dead channels and no stand out straws with substantially more hits, which indicates a noisy channel.
+Figure~\ref{fig:DigitChannelMap} shows the all straws hits in both stations and is the first plot looked at to determine if there are any problems with the straws. This includes checking that there are no dead channels and no stand out straws with substantially more hits, which indicates a noisy channel.
 
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.5]{Figures/DigitChannelMap_.png}
 \decoRule
 \caption{A 3D graph displaying the number of hits in each straw for both tracking stations. The higher numbered straws are positioned closer to the storage ring and so more hits are recorded.}
-\label{fig:DigitChannelMap_}
+\label{fig:DigitChannelMap}
 \end{figure}
 
-Figure 5.15 displays the sum of all the drift times for each straw. The hit time for the straw is used to group straw hits together to form tracks. From this a $t_0$ value can be determined and using equation 5.1 the drift time is calculated.
+Figure~\ref{fig:StrawDriftTime} displays the sum of all the drift times for each straw. The hit time for the straw is used to group straw hits together to form tracks. From this a $t_0$ value can be determined and using equation 5.1 the drift time is calculated.
 
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.4]{Figures/StrawDriftTime_.png}
 \decoRule
 \caption{The straw drift time as measured during data taking by the tracking detectors.}
-\label{fig:StrawDriftTime_}
+\label{fig:StrawDriftTime}
 \end{figure}
 
-Figure 5.16 shows the track moment for all tracks. It is not a smooth peak as it includes certain regions where they cross over the thresholds of the quality cuts. Figure 5.17 displays the extrapolated tracks positions in the storage ring. Figure 5.18 shows the azimuthal muon beam spot.
+Figure~\ref{fig:hMomentum} shows the track moment for all tracks. It is not a smooth peak as it includes certain regions where they cross over the thresholds of the quality cuts. Figure~\ref{fig:trackextrap} displays the extrapolated tracks positions in the storage ring. Figure~\ref{fig:beamposition} shows the azimuthal muon beam spot.
 
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.4]{Figures/hMomentum_.png}
 \decoRule
 \caption{The track momentum distribution measured for tracks by the tracking detectors.}
-\label{fig:hMomentum_}
+\label{fig:hMomentum}
 \end{figure}
 
 \begin{figure}[th]
@@ -328,11 +328,11 @@ Figure 5.16 shows the track moment for all tracks. It is not a smooth peak as it
 \centering
 \includegraphics{Figures/beamposition.png}
 \decoRule
-\caption{The muon beam distribution reconstructed from all extrapolated tracks}
+\caption{The muon beam distribution reconstructed from all extrapolated tracks.}
 \label{fig:beamposition}
 \end{figure}
 
-Figure 5.19 is the radial position versus time of the tracks showing the coherent betatron oscillation of the stored muon beam. The radial position of the tracks is shown in figure 5.20. From this plot the radial distribution looks like its peak is at around 20 mm. However if you look at figure 5.19 you can see that the distribution bunches up around this value and the projection of this onto the x axis is what is displayed in figure 5.20. If you look at the CBO it can been seen that the peak is actually around 9 mm. The vertical position of the tracks is shown in figure 5.21 for completeness.
+Figure~\ref{fig:trackercbo} is the radial position versus time of the tracks showing the coherent betatron oscillation of the stored muon beam. The radial position of the tracks is shown in figure~\ref{fig:RadialPosition_}. From this plot the radial distribution looks like its peak is at around 20 mm. However if you look at figure~\ref{fig:trackercbo} you can see that the distribution bunches up around this value and the projection of this onto the x axis is what is displayed in figure~\ref{fig:RadialPosition_}. If you look at the CBO it can been seen that the peak is actually around 9 mm. The vertical position of the tracks is shown in figure~\ref{fig:VerticalPosition} for completeness.
 
 \begin{figure}[th]
 \centering
@@ -355,7 +355,7 @@ Figure 5.19 is the radial position versus time of the tracks showing the coheren
 \includegraphics[scale=0.4]{Figures/VerticalPosition_.png}
 \decoRule
 \caption{Reconstructed decay vertical position for measured tracks.}
-\label{fig:VerticalPosition_}
+\label{fig:VerticalPosition}
 \end{figure}
 
 More details of the beam dynamics results will be given in chapter 7. The following chapter will provide details on the construction of the straw tracking modules. These results would not be possible if the tracking detectors were not made to very high specifications, which the following chapter will discuss in detail.
